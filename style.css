@@ -1,9 +1,97 @@
 * {
     font-family: serif;
 }
+
 html {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
 }
+
+li {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.logo {}
+
+.logo-main {
+    align-items: center;
+    text-align: center;
+}
+
+.fa {}
+
+.fa-angle-down {}
+
+.place {
+    text-align: center;
+}
+
+.timing {
+    text-align: center;
+}
+
+.timing_flex1 {}
+
+.timing_flex_txt {}
+
+.timing_flex2 {}
+
+.timing_flex3 {}
+
+.details {
+    text-align: center;
+}
+
+.img_flex {}
+
+.circle1 {}
+
+.circle2 {}
+
+.circle3 {}
+
+.womens {}
+
+.mans {}
+
+.forms {
+    text-align: center;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.socials {}
+
+.fa-telegram {}
+
+.fa-vk {}
+
+.fa-envelope-open-o {}
+
+.waitfor {
+    text-align: center;
+}
+
+.timer {}
+
+.footer {}
