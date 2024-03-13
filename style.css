@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Lastochka;
+    src: url(/fonts/Lastochka.ttf);
+}
+
 * {
     font-family: serif;
 }
@@ -8,6 +13,7 @@ html {
 
 body {
     margin: 0;
+    background-color: #f0f0eb;
 }
 
 li {
@@ -15,8 +21,31 @@ li {
     padding-left: 10px;
 }
 
-.container {
+table {
     text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+tr, td, th, tbody{
+    font-weight: normal;
+
+}
+
+th {
+    padding: 9px;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+.lastochka-font {
+    font-family: Lastochka;
+    font-weight: normal;
+    font-size: 75px;
 }
 
 .header {
@@ -29,6 +58,11 @@ li {
     padding: 0;
 }
 
+.header_txt {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .logo {}
 
 .logo-main {
@@ -36,9 +70,24 @@ li {
     text-align: center;
 }
 
-.fa {}
+.name_txt {
+    font-weight: 100;
+}
 
-.fa-angle-down {}
+.under_txt {
+    margin: 0 auto;
+    max-width: 490px;
+}
+.calendar {
+    position: relative;
+    margin: 0 auto;
+}
+
+#calendar {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
 
 .place {
     text-align: center;
