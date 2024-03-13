@@ -1,57 +1,40 @@
-function createCalendar(elem, year, month) {
-    elem = document.querySelector(elem)
-
-    let mon = month - 1;
-    let d = new Date(year, mon)
-
-    let table = `
-    <caption></caption>
-    <table>
-        <tr>
-            <th>пн</th>
-            <th>вт</th>
-            <th>ср</th>
-            <th>чт</th>
-            <th>пт</th>
-            <th>сб</th>
-            <th>вс</th>
-        </tr>
-        <tr>
-    `;
-
-    for (let i = 0; i < getDay(d); i++) {
-        table += `<td></td>`
+document.addEventListener('DOMContentLoaded', function () {
+    // конечная дата, например 1 июля 2021
+    const deadline = new Date(2024, 7, 10);
+    // id таймера
+    let timerId = null;
+    // склонение числительных
+    function declensionNum(num, words) {
+        return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
     }
-
-    while (d.getMonth() == mon) {
-        table += `<td>` + d.getDate() + `</td>`
-        if (getDay(d) % 7 == 6) {
-            table += `</tr><tr>`
+    // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+    function countdownTimer() {
+        const diff = deadline - new Date();
+        if (diff <= 0) {
+            clearInterval(timerId);
         }
-        d.setDate(d.getDate() + 1)
+        const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+        const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+        const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+        const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+        $days.textContent = days < 10 ? '0' + days : days;
+        $hours.textContent = hours < 10 ? '0' + hours : hours;
+        $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+        $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+        $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
+        $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
+        $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+        $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
     }
+    // получаем элементы, содержащие компоненты даты
+    const $days = document.querySelector('.timer__days');
+    const $hours = document.querySelector('.timer__hours');
+    const $minutes = document.querySelector('.timer__minutes');
+    const $seconds = document.querySelector('.timer__seconds');
+    // вызываем функцию countdownTimer
+    countdownTimer();
+    // вызываем функцию countdownTimer каждую секунду
+    timerId = setInterval(countdownTimer, 1000);
+});
 
-    if (getDay(d) != 0) {
-        for (let i = getDay(d); i < 7; i++) {
-            table += `<td></td>`
-        }
-    }
-
-    elem.innerHTML = table
-}
-
-function getDay(date) {
-    let day = date.getDay();
-    if (day == 0) {
-        day = 7
-    }
-    return day - 1
-}
-
-function displayCalendar() {
-    let element = document.getElementById("#calendar")
-    element.innerHTML = createCalendar("#calendar", 2024, 7)
-}
-
-let cal = displayCalendar
-cal()
+const deadline = new Date(2024, 7, 10)
