@@ -271,8 +271,8 @@ a {
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid #000000;
-    border-right: 5px solid #000;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000;
     transform: rotate(45deg);
     margin: -16px 0;
     animation: arrow-7 2s infinite;
