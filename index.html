@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://makoch1337.github.io/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <title>LOVELY BIRDS</title>
 </head>
 
 <body>
@@ -43,16 +44,15 @@
                 </p>
                 <h2 class="lastochka-font logo-date">Июль 2024</h2>
                 <div class="calendar">
-                    <img src="https://makoch1337.github.io/images/ring.svg" alt="Calendar Heart" class="img1_calendar">
-                    <img src="https://makoch1337.github.io/images/calendar.png" alt="Heart" class="img2_calendar">
+                    <img src="/images/ring.svg" alt="Calendar Heart" class="img1_calendar">
+                    <img src="/images/calendar.png" alt="Heart" class="img2_calendar">
                 </div>
             </div>
         </div>
         <div class="place" id="block2">
             <div class="container">
                 <h2 class="lastochka-font">Place</h2>
-                <p>Place were we eat</p>
-                <h3>MAP</h3>
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/kusto/122436416809/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Кусто</a><a href="https://yandex.ru/maps/47/nizhny-novgorod/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ресторан в Нижнем Новгороде</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=44.007697%2C56.322958&mode=poi&poi%5Bpoint%5D=44.005963%2C56.324265&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D122436416809&z=16.8" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
             </div>
         </div>
         <div class="timing" id="block3">
@@ -61,7 +61,7 @@
                 <div class="timing_flex1">
                     <h4 class="lastochka-font">16:00</h4>
                     <!-- <img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/the-toast.png" class="timing_img" alt="the-toast" /> -->
-                    <img src="https://makoch1337.github.io/images/dance.png" alt="Dance" width="70" height="70">
+                    <img src="images/dance.png" alt="Dance" width="70" height="70">
                     <div class="timing_flex_txt">
                         <h6 class="timing_upper-txt">WELCOME</h6>
                         <p class="timing_bottom-txt">СОБИРАЯСЬ НА ТОРЖЕСТВО ВОЗЬМИТЕ С СОБОЙ СВОИ УЛЫБКИ И ХОРОШЕЕ
@@ -70,7 +70,7 @@
                 </div>
                 <div class="timing_flex2">
                     <h4 class="lastochka-font">16:30</h4>
-                    <img src="https://makoch1337.github.io/images/rings_3405946.png" class="timing_img">
+                    <img src="/images/rings_3405946.png" class="timing_img">
                     <div class="timing_flex_txt">
                         <h6 class="timing_upper-txt">ВЫЕЗДНАЯ РЕГИСТРАЦИЯ</h6>
                         <p class="timing_bottom-txt">ПРИГОТОВЬТЕ ПЛАТОЧКИ ДЛЯ ТРОГАТЕЛЬНОГО МОМЕНТА</p>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="timing_flex3">
                     <h4 class="lastochka-font">17:00</h4>
-                    <img width="64" height="64" src="https://makoch1337.github.io/images/romantic-dinner.png" alt="meal--v2" />
+                    <img width="64" height="64" src="images/romantic-dinner.png" alt="meal--v2" />
                     <div class="timing_flex_txt">
                         <h6 class="timing_upper-txt">ПРАЗДНИЧНЫЙ БАНКЕТ</h6>
                         <p class="timing_bottom-txt">ВРЕМЯ ТАНЦЕВ, ВКУСНОЙ ЕДЫ, ТЕПЛЫХ ПОЖЕЛАНИЙ И РАЗВЛЕЧЕНИЙ</p>
@@ -98,9 +98,25 @@
                 </div>
                 <div class="womens">
                     <h3 class="lastochka-font">ДЕВУШКИ</h3>
+                    <div class="womens-img">
+                        <img src="/images/dress code/woman/1.jpg" alt="Woman Image 1">
+                        <img src="/images/dress code/woman/2.jpg" alt="Woman Image 2">
+                        <img src="/images/dress code/woman/3.jpg" alt="Woman Image 3">
+                        <img src="/images/dress code/woman/4.jpg" alt="Woman Image 4">
+                        <img src="/images/dress code/woman/5.jpg" alt="Woman Image 5">
+                        <img src="/images/dress code/woman/6.jpg" alt="Woman Image 6">
+                    </div>
                 </div>
                 <div class="mans">
                     <h3 class="lastochka-font">МУЖЧИНЫ</h3>
+                    <div class="mans-img">
+                        <img src="/images/dress code/mans/man_1.png" alt="Man Image 1">
+                        <img src="/images/dress code/mans/man_2.png" alt="Man Image 2">
+                        <img src="/images/dress code/mans/man_3.jpg" alt="Man Image 3">
+                        <img src="/images/dress code/mans/man_4.jpg" alt="Man Image 4">
+                        <img src="/images/dress code/mans/man_5.jpg" alt="Man Image 5">
+                        <img src="/images/dress code/mans/man_6.jpg" alt="Man Image 6">
+                    </div>
                 </div>
                 <p>ПРИЯТНЫМ КОМПЛИМЕНТОМ ДЛЯ НАС БУДЕТ, ЕСЛИ ВМЕСТО ЦВЕТОВ ВЫ РЕШИТЕ ПОДАРИТЬ НАМ БУТЫЛОЧКУ ВИНА</p>
             </div>
@@ -114,7 +130,7 @@
                     <span></span>
                     <span></span>
                 </div>
-                <form method="POST" id="feedback-form">
+                <!-- <form method="POST" id="feedback-form">
                     <p>
                         <input type="text" name="nameFF" required placeholder="Имя" x-autocompletetype="name">
                     </p>
@@ -127,7 +143,8 @@
                     <p>
                         <input type="submit" value="отправить">
                     </p>
-                </form>
+                </form> -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOP_hI_Kl4Mfd2hOaCYfU83sLGscPTDikUT0OoKw-PxmExmQ/viewform?embedded=true" width="640" height="748" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
             </div>
         </div>
         <div class="contacts" id="block5">
