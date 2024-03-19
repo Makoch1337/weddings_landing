@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // конечная дата, например 1 июля 2021
     const deadline = new Date(2024, 7, 10);
@@ -39,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const deadline = new Date(2024, 7, 10)
 
-let smooth = document.querySelectorAll("div") 
-setTimeout(function() {
+let smooth = document.querySelectorAll("div")
+setTimeout(function () {
     x.style.animation = "fade 1s";
     x.style.opacity = "1"
-}, 5000)
+}, 2000)
