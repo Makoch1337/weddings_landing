@@ -1,266 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="/images/site_logo.jpg" />
+        <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+        <title>LOVELY BIRDS</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/images/site_logo.jpg" />
-    <script src="https://api-maps.yandex.ru/v3/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
-    <title>LOVELY BIRDS</title>
-</head>
-
-<body>
-    <!-- <header class="header">
-        <div class="container">
-            <div class="header__menu">
-                <ul class="header__menu">
-                    <li class="header_txt"><a href="#block1">О нас</a></li>
-                    <li class="header_txt"><a href="#block2">Место проведения</a></li>
-                    <li class="header_txt"><a href="#block3">Расписание</a></li>
-                    <li class="header_txt"><a href="#block4">Опрос</a></li>
-                    <li class="header_txt"><a href="#block5">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-    </header> -->
-    <div class="logo" id="block1">
-        <div class="logo-main">
-            <div class="container">
-                <h1 class="name_txt">МАКСИМ</h1>
-                <h1 class="lastochka-font">И</h1>
-                <h1 class="name_txt">АЛЕКСАНДРА</h1>
-                <h2 class="lastochka-font">Мы женимся!</h2>
-                <h2 class="name_txt">10 | 07 | 2024</h2>
-                <div class="arrow-7">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <h2 class="lastochka-font">Дорогие гости!</h2>
-                <p class="under_txt">В НАШЕЙ ЖИЗНИ ПРЕДСТОЯТ СЧАСТЛИВЫЕ ПЕРЕМЕНЫ! МЫ ХОТИМ, ЧТОБЫ В ЭТОТ ДЕНЬ РЯДОМ С
-                    НАМИ БЫЛИ САМЫЕ
-                    БЛИЗКИЕ И ДОРОГИЕ ДЛЯ НАС ЛЮДИ. БУДЕМ РАДЫ РАЗДЕЛИТЬ С ВАМИ ЧУДЕСНЫЙ ПРАЗДНИК В ДЕНЬ НАШЕЙ СВАДЬБЫ
-                </p>
-                <h2 class="lastochka-font logo-date">Июль 2024</h2>
-                <div class="calendar">
-                    <img src="/images/ring.svg" alt="Calendar Heart" class="img1_calendar">
-                    <!-- <img src="/images/calendar.png" alt="Heart" class="img2_calendar"> -->
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>пн</th>
-                                <th>вт</th>
-                                <th>ср</th>
-                                <th>чт</th>
-                                <th>пт</th>
-                                <th>сб</th>
-                                <th>вс</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                            </tr>
-                            <tr>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                            </tr>
-                            <tr>
-                                <td>29</td>
-                                <td>30</td>
-                                <td>31</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="place" id="block2">
-            <div class="container">
-                <h2 class="lastochka-font">Place</h2>
-                <p class="place-txt">Ресторан "Кусто", Нижний Новгород, улица Пискунова, 16</p>
-                <div style="position:relative;overflow:hidden;"><a
-                        href="https://yandex.ru/maps/org/kusto/122436416809/?utm_medium=mapframe&utm_source=maps"
-                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Кусто</a><a
-                        href="https://yandex.ru/maps/47/nizhny-novgorod/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps"
-                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Ресторан в Нижнем
-                        Новгороде</a><iframe
-                        src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=44.007697%2C56.322958&mode=poi&poi%5Bpoint%5D=44.005963%2C56.324265&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D122436416809&z=16.8"
-                        width="560" height="400" frameborder="1" allowfullscreen="true"
-                        style="position:relative;"></iframe></div>
-            </div>
-        </div>
-        <div class="timing" id="block3">
-            <div class="container">
-                <h2 class="lastochka-font timing_header">Timing</h2>
-                <div class="timing_flex1">
-                    <h4 class="lastochka-font timing-txt">16:00</h4>
-                    <!-- <img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/the-toast.png" class="timing_img" alt="the-toast" /> -->
-                    <img src="images/dance.png" alt="Dance" width="70" height="70" class="timing-txt">
-                    <div class="timing_flex_txt">
-                        <h6 class="timing_upper-txt">WELCOME</h6>
-                        <p class="timing_bottom-txt">СОБИРАЯСЬ НА ТОРЖЕСТВО ВОЗЬМИТЕ С СОБОЙ СВОИ УЛЫБКИ И ХОРОШЕЕ
-                            НАСТРОЕНИЕ</p>
+    <body>
+        <div class="logo" id="block1">
+            <div class="logo-main">
+                <div class="container">
+                    <h1 class="name_txt">МАКСИМ</h1>
+                    <h1 class="lastochka-font">И</h1>
+                    <h1 class="name_txt">АЛЕКСАНДРА</h1>
+                    <h2 class="lastochka-font">Мы женимся!</h2>
+                    <h2 class="name_txt">10 | 07 | 2024</h2>
+                    <div class="arrow-7">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                </div>
-                <div class="timing_flex2">
-                    <h4 class="lastochka-font timing-txt">16:30</h4>
-                    <img src="/images/rings_3405946.png" class="timing_img">
-                    <div class="timing_flex_txt">
-                        <h6 class="timing_upper-txt">ВЫЕЗДНАЯ РЕГИСТРАЦИЯ</h6>
-                        <p class="timing_bottom-txt">ПРИГОТОВЬТЕ ПЛАТОЧКИ ДЛЯ ТРОГАТЕЛЬНОГО МОМЕНТА</p>
-                    </div>
-                </div>
-                <div class="timing_flex3">
-                    <h4 class="lastochka-font timing-txt">17:00</h4>
-                    <img class="timing-txt" width="64" height="64" src="images/romantic-dinner.png" alt="meal--v2" />
-                    <div class="timing_flex_txt">
-                        <h6 class="timing_upper-txt">ПРАЗДНИЧНЫЙ БАНКЕТ</h6>
-                        <p class="timing_bottom-txt">ВРЕМЯ ТАНЦЕВ, ВКУСНОЙ ЕДЫ, ТЕПЛЫХ ПОЖЕЛАНИЙ И РАЗВЛЕЧЕНИЙ</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="details">
-            <div class="container">
-                <h2 class="lastochka-font">Детали</h2>
-                <p>МЫ ОЧЕНЬ ЖДЕМ И С УДОВОЛЬСТВИЕМ ГОТОВИМСЯ К НАШЕМУ НЕЗАБЫВАЕМОМУ ДНЮ!</p> <br>
-                <p>ПРИЯТНЫМ КОМПЛИМЕНТОМ ДЛЯ НАС БУДЕТ, ЕСЛИ ВМЕСТО ЦВЕТОВ ВЫ РЕШИТЕ ПОДАРИТЬ НАМ БУТЫЛОЧКУ ВИНА</p><br>
-                <p>ПОДДЕРЖИТЕ НАС ВАШИМИ УЛЫБКАМИ И ОБЪЯТИЯМИ, А ТАКЖЕ КРАСИВЫМИ НАРЯДАМИ В ПАЛИТРЕ ТОРЖЕСТВА</p>
-                <div class="womens">
-                    <h3 class="lastochka-font">Девушки</h3>
-                    <div class="circle-flex">
-
-                        <div class="circle1"></div>
-                        <div class="circle2"></div>
-                        <div class="circle3"></div>
-                    </div>
-                    <div class="horizontal-scroll">
-                        <ul class="womens-img">
-                            <li><img class="people-img" src="/images/dress code/woman/1.jpg" alt="Woman Image 1"></li>
-                            <li><img class="people-img" src="/images/dress code/woman/2.jpg" alt="Woman Image 2"></li>
-                            <li><img class="people-img" src="/images/dress code/woman/6.jpg" alt="Woman Image 3"></li>
-                            <li><img class="people-img" src="/images/dress code/woman/3.jpg" alt="Woman Image 4"></li>
-                            <li><img class="people-img" src="/images/dress code/woman/4.jpg" alt="Woman Image 5"></li>
-                            <li><img class="people-img" src="/images/dress code/woman/5.jpg" alt="Woman Image 6"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mans">
-                    <h3 class="lastochka-font">Мужчины</h3>
-                    <div class="circle-flex">
-                        <div class="circle4"></div>
-                        <div class="circle5"></div>
-                    </div>
-                    <div class="horizontal-scroll">
-                        <ul class="mans-img">
-                            <li><img class="people-img" src="/images/dress code/mans/man_1.png" alt="Man Image 1"></li>
-                            <li><img class="people-img" src="/images/dress code/mans/man_2.png" alt="Man Image 2"></li>
-                            <li><img class="people-img" src="/images/dress code/mans/man_3.jpg" alt="Man Image 3"></li>
-                            <li><img class="people-img" src="/images/dress code/mans/man_4.jpg" alt="Man Image 4"></li>
-                            <li><img class="people-img" src="/images/dress code/mans/man_5.jpg" alt="Man Image 5"></li>
-                            <li><img class="people-img" src="/images/dress code/mans/man_6.jpg" alt="Man Image 6"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="forms" id="block4">
-            <div class="container">
-                <h2 class="lastochka-font">Анкета</h2>
-                <p>ОТВЕТЬТЕ, ПОЖАЛУЙСТА, НА НЕСКОЛЬКО ВОПРОСОВ, КОТОРЫЕ МЫ ДЛЯ ВАС ПОДГОТОВИЛИ</p>
-                <div class="arrow-7">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <!-- <form method="POST" id="feedback-form">
-                    <p>
-                        <input type="text" name="nameFF" required placeholder="Имя" x-autocompletetype="name">
+                    <h2 class="lastochka-font">Дорогие гости!</h2>
+                    <p class="under_txt">
+                        В НАШЕЙ ЖИЗНИ ПРЕДСТОЯТ СЧАСТЛИВЫЕ ПЕРЕМЕНЫ! МЫ ХОТИМ,
+                        ЧТОБЫ В ЭТОТ ДЕНЬ РЯДОМ С НАМИ БЫЛИ САМЫЕ БЛИЗКИЕ И
+                        ДОРОГИЕ ДЛЯ НАС ЛЮДИ. БУДЕМ РАДЫ РАЗДЕЛИТЬ С ВАМИ
+                        ЧУДЕСНЫЙ ПРАЗДНИК В ДЕНЬ НАШЕЙ СВАДЬБЫ
                     </p>
-                    <p>
-                        <input type="email" name="contactFF" required placeholder="E-mail" x-autocompletetype="email">
-                    </p>
-                    <p>
-                        <textarea name="messageFF" required rows="5"></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="отправить">
-                    </p>
-                </form> -->
-                <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/66d6ab8d73cee73d3c0b3b7a/?iframe=1" frameborder="0" name="ya-form-66d6ab8d73cee73d3c0b3b7a" width="650"></iframe>
-            </div>
-        </div>
-        <div class="contacts" id="block5">
-            <div class="container">
-                <h2 class="lastochka-font">Контакты</h2>
-                <p>ПО ВСЕМ ВОПРОСАМ ОБРАЩАЙТЕСЬ К НАШЕМУ ОРГАНИЗАТОРУ</p>
-                <p>АЛЕКСАНДРА</p>
-                <p>+7(908)999-89-99</p>
-                <div class="socials">
-                    <a href="https://t.me/Sashulencia" target="_blank">
-                        <i class="fa fa-telegram" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://vk.com/sanya_gorbacheva" target="_blank">
-                        <i class="fa fa-vk" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:ya@mkochnev.ru&body=hello?subject=question" target="_blank">
-                        <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                    </a>
+                    <h2 class="lastochka-font logo-date">Июль 2024</h2>
+                    <div class="calendar">
+                        <img
+                            src="/images/ring.svg"
+                            alt="Calendar Heart"
+                            class="img1_calendar"
+                        />
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>пн</th>
+                                    <th>вт</th>
+                                    <th>ср</th>
+                                    <th>чт</th>
+                                    <th>пт</th>
+                                    <th>сб</th>
+                                    <th>вс</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="waitfor">
-            <div class="container">
-                <h2 class="lastochka-font bottom-txt">Ждем Вас через...</h2>
-                <div class="timer">
-                    <div class="timer__items">
-                        <div class="timer__item timer__days">00</div>
-                        <div class="timer__item timer__hours">00</div>
-                        <div class="timer__item timer__minutes">00</div>
-                        <div class="timer__item timer__seconds">00</div>
+            <div class="place" id="block2">
+                <div class="container">
+                    <h2 class="lastochka-font">Place</h2>
+                    <p class="place-txt">
+                        Ресторан "Кусто", Нижний Новгород, улица Пискунова, 16
+                    </p>
+                    <div style="position: relative; overflow: hidden">
+                        <a
+                            href="https://yandex.ru/maps/org/kusto/122436416809/?utm_medium=mapframe&utm_source=maps"
+                            style="
+                                color: #eee;
+                                font-size: 12px;
+                                position: absolute;
+                                top: 0px;
+                            "
+                            >Кусто</a
+                        ><a
+                            href="https://yandex.ru/maps/47/nizhny-novgorod/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps"
+                            style="
+                                color: #eee;
+                                font-size: 12px;
+                                position: absolute;
+                                top: 14px;
+                            "
+                            >Ресторан в Нижнем Новгороде</a
+                        ><iframe
+                            src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=44.007697%2C56.322958&mode=poi&poi%5Bpoint%5D=44.005963%2C56.324265&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D122436416809&z=16.8"
+                            width="560"
+                            height="400"
+                            frameborder="1"
+                            allowfullscreen="true"
+                            style="position: relative"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="timing" id="block3">
+                <div class="container">
+                    <h2 class="lastochka-font timing_header">Timing</h2>
+                    <div class="timing_flex1">
+                        <h4 class="lastochka-font timing-txt">16:00</h4>
+                        <img
+                            src="images/dance.png"
+                            alt="Dance"
+                            width="70"
+                            height="70"
+                            class="timing-txt"
+                        />
+                        <div class="timing_flex_txt">
+                            <h6 class="timing_upper-txt">WELCOME</h6>
+                            <p class="timing_bottom-txt">
+                                СОБИРАЯСЬ НА ТОРЖЕСТВО ВОЗЬМИТЕ С СОБОЙ СВОИ
+                                УЛЫБКИ И ХОРОШЕЕ НАСТРОЕНИЕ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timing_flex2">
+                        <h4 class="lastochka-font timing-txt">16:30</h4>
+                        <img
+                            src="/images/rings_3405946.png"
+                            class="timing_img"
+                        />
+                        <div class="timing_flex_txt">
+                            <h6 class="timing_upper-txt">
+                                ВЫЕЗДНАЯ РЕГИСТРАЦИЯ
+                            </h6>
+                            <p class="timing_bottom-txt">
+                                ПРИГОТОВЬТЕ ПЛАТОЧКИ ДЛЯ ТРОГАТЕЛЬНОГО МОМЕНТА
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timing_flex3">
+                        <h4 class="lastochka-font timing-txt">17:00</h4>
+                        <img
+                            class="timing-txt"
+                            width="64"
+                            height="64"
+                            src="images/romantic-dinner.png"
+                            alt="meal--v2"
+                        />
+                        <div class="timing_flex_txt">
+                            <h6 class="timing_upper-txt">ПРАЗДНИЧНЫЙ БАНКЕТ</h6>
+                            <p class="timing_bottom-txt">
+                                ВРЕМЯ ТАНЦЕВ, ВКУСНОЙ ЕДЫ, ТЕПЛЫХ ПОЖЕЛАНИЙ И
+                                РАЗВЛЕЧЕНИЙ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="container">
+                    <h2 class="lastochka-font">Детали</h2>
+                    <p>
+                        МЫ ОЧЕНЬ ЖДЕМ И С УДОВОЛЬСТВИЕМ ГОТОВИМСЯ К НАШЕМУ
+                        НЕЗАБЫВАЕМОМУ ДНЮ!
+                    </p>
+                    <br />
+                    <p>
+                        ПРИЯТНЫМ КОМПЛИМЕНТОМ ДЛЯ НАС БУДЕТ, ЕСЛИ ВМЕСТО ЦВЕТОВ
+                        ВЫ РЕШИТЕ ПОДАРИТЬ НАМ БУТЫЛОЧКУ ВИНА
+                    </p>
+                    <br />
+                    <p>
+                        ПОДДЕРЖИТЕ НАС ВАШИМИ УЛЫБКАМИ И ОБЪЯТИЯМИ, А ТАКЖЕ
+                        КРАСИВЫМИ НАРЯДАМИ В ПАЛИТРЕ ТОРЖЕСТВА
+                    </p>
+                    <div class="womens">
+                        <h3 class="lastochka-font">Девушки</h3>
+                        <div class="circle-flex">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                            <div class="circle3"></div>
+                        </div>
+                        <div class="horizontal-scroll">
+                            <ul class="womens-img">
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="/images/dress code/woman/1.jpg"
+                                        alt="Woman Image 1"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="/images/dress code/woman/2.jpg"
+                                        alt="Woman Image 2"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="/images/dress code/woman/6.jpg"
+                                        alt="Woman Image 3"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="/images/dress code/woman/3.jpg"
+                                        alt="Woman Image 4"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="/images/dress code/woman/4.jpg"
+                                        alt="Woman Image 5"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="/images/dress code/woman/5.jpg"
+                                        alt="Woman Image 6"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mans">
+                        <h3 class="lastochka-font">Мужчины</h3>
+                        <div class="circle-flex">
+                            <div class="circle4"></div>
+                            <div class="circle5"></div>
+                        </div>
+                        <div class="horizontal-scroll">
+                            <ul class="mans-img">
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="./images/dress code/mans/man_1.png"
+                                        alt="Man Image 1"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="./images/dress code/mans/man_2.png"
+                                        alt="Man Image 2"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="./images/dress code/mans/man_3.jpg"
+                                        alt="Man Image 3"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="./images/dress code/mans/man_4.jpg"
+                                        alt="Man Image 4"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="./images/dress code/mans/man_5.jpg"
+                                        alt="Man Image 5"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        class="people-img"
+                                        src="./images/dress code/mans/man_6.jpg"
+                                        alt="Man Image 6"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forms" id="block4">
+                <div class="container">
+                    <h2 class="lastochka-font">Анкета</h2>
+                    <p>
+                        ОТВЕТЬТЕ, ПОЖАЛУЙСТА, НА НЕСКОЛЬКО ВОПРОСОВ, КОТОРЫЕ МЫ
+                        ДЛЯ ВАС ПОДГОТОВИЛИ
+                    </p>
+                    <div class="arrow-7">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <script src="https://forms.yandex.ru/_static/embed.js"></script>
+                    <iframe
+                        src="https://forms.yandex.ru/u/66d6ab8d73cee73d3c0b3b7a/?iframe=1"
+                        frameborder="0"
+                        name="ya-form-66d6ab8d73cee73d3c0b3b7a"
+                        width="650"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="contacts" id="block5">
+                <div class="container">
+                    <h2 class="lastochka-font">Контакты</h2>
+                    <p>ПО ВСЕМ ВОПРОСАМ ОБРАЩАЙТЕСЬ К НАШЕМУ ОРГАНИЗАТОРУ</p>
+                    <p>АЛЕКСАНДРА</p>
+                    <p>+7(908)999-89-99</p>
+                    <div class="socials">
+                        <a href="https://t.me/Sashulencia" target="_blank">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </a>
+                        <a
+                            href="https://vk.com/sanya_gorbacheva"
+                            target="_blank"
+                        >
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                        <a
+                            href="mailto:ya@mkochnev.ru&body=hello?subject=question"
+                            target="_blank"
+                        >
+                            <i
+                                class="fa fa-envelope-open-o"
+                                aria-hidden="true"
+                            ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="waitfor">
+                <div class="container">
+                    <h2 class="lastochka-font bottom-txt">Ждем Вас через...</h2>
+                    <div class="timer">
+                        <div class="timer__items">
+                            <div class="timer__item timer__days">00</div>
+                            <div class="timer__item timer__hours">00</div>
+                            <div class="timer__item timer__minutes">00</div>
+                            <div class="timer__item timer__seconds">00</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer">
-
-    </footer>
-    <script src="app.js"></script>
-</body>
-
+        <footer class="footer"></footer>
+        <script src="app.js"></script>
+    </body>
 </html>
