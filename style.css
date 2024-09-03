@@ -1,6 +1,6 @@
 @font-face {
     font-family: Lastochka;
-    src: url(/fonts/Lastochka.ttf);
+    src: url(./fonts/Lastochka.ttf);
 }
 
 /* @keyframes spin{
@@ -49,7 +49,7 @@ html {
 
 body {
     margin: 0;
-    background-image: url(/images/background.jpg);
+    background-image: url(./images/background.jpg);
 }
 
 li {
