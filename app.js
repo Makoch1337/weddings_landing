@@ -1,12 +1,15 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     // конечная дата, например 1 июля 2021
-    const deadline = new Date(2024, 7, 10);
+    const deadline = new Date(2024, 10, 10);
     // id таймера
     let timerId = null;
     // склонение числительных
     function declensionNum(num, words) {
-        return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+        return words[
+            num % 100 > 4 && num % 100 < 20
+                ? 2
+                : [2, 0, 1, 1, 1, 2][num % 10 < 5 ? num % 10 : 5]
+        ];
     }
     // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
     function countdownTimer() {
@@ -24,8 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
         $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
         $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
         $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
-        $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
-        $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+        $minutes.dataset.title = declensionNum(minutes, [
+            'минута',
+            'минуты',
+            'минут',
+        ]);
+        $seconds.dataset.title = declensionNum(seconds, [
+            'секунда',
+            'секунды',
+            'секунд',
+        ]);
     }
     // получаем элементы, содержащие компоненты даты
     const $days = document.querySelector('.timer__days');
@@ -38,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
     timerId = setInterval(countdownTimer, 1000);
 });
 
-const deadline = new Date(2024, 7, 10)
+const deadline = new Date(2024, 7, 10);
 
-let smooth = document.querySelectorAll("div")
+let smooth = document.querySelectorAll('div');
 setTimeout(function () {
-    x.style.animation = "fade 1s";
-    x.style.opacity = "1"
-}, 2000)
+    x.style.animation = 'fade 1s';
+    x.style.opacity = '1';
+}, 2000);
